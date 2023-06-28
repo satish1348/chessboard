@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChessBoard</title>
+        <style>
+            table{
+                border:1px solid black;
+                border-collapse:collapse;
+                height:40px;
+                
+                background-color: rgb(215, 131, 13);
+    
+            }
+            td{
+                border:1px solid black;
+                height:40px;
+                width:40px;
+                background-color:rgb(201, 135, 14);
+            }
+            .white{
+                background-color:white;
+            }
+            .black{
+                background-color: black;
+            }
+            body{
+                background-color: rgb(16, 244, 206);
+            }
+            img{
+                height:40px;
+                width:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <h1 align="center">CHESS BOARD</h1><tr>
+            <tr>
+                <td class="white"><!--<img src="https://th.bing.com/th/id/OIP.5xrDbEhwx22ZxCKvn5mYIwHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Rook">--></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"><!--<img src="https://thumbs.dreamstime.com/b/chess-black-rook-vector-illustration-19870620.jpg">--></td>
+            </tr><tr>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+            </tr><tr>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+            </tr><tr>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+            </tr><tr>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+            </tr><tr>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+            </tr><tr>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+            </tr><tr>
+                <td class="black"><!--<img src="whiterook.jpg" alt="Rook">--></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"><!--<img src="data:image/jpeg;base64,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">--></td>
+            </tr>
+        </tr>
+        </table>
+       <!-- <h6 align="right">BY <br>SATISH KUMAR </h6>-->
+    </body>
+</html>
